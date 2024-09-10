@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="ebk.png">
+    <meta property="og:site_name" content=" EBKUST Student Registration System " />
+    <meta property="og:title" content=" Student Registration "/>
+    <meta property="og:description" content=" registraion form " />
+
+    <title> Semester Registration </title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="icon" href="imgs/logoebkust-1024x755-83523028.png" type="image/png">
+
+
+</head>
+
+<body>
+    <header>
+        <img src="imgs/ebk.svg" alt="Ernest Bai Koroma University of Science and Technology" id="uni_logo">
+    </header>
+    
+    <!-- <div class="form"> -->
+
+    <form id="registrationForm">
+        <h2>Student Registration</h2>
+
+
+        <div>
+            <label for="id_num">ID Number:</label>
+            <input style="width:15%" type="text" id="id_num" required>
+        </div>
+        <div>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required>
+        </div>
+        <div>
+            <label for="middleName">Middle Name:</label>
+            <input type="text" id="middleName">
+        </div>
+        <div>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required>
+        </div>
+
+        <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+        </div>
+
+        <div>
+            <label for="address">Address:</label>
+            <textarea id="address" required></textarea>
+        </div>
+
+
+        <div>
+            <label for="department">Department:</label>
+            <select id="department" required>
+                <option value="--">--</option>
+                <option value="computer_science"> Computer Science </option>
+                <option value="education"> Education </option>
+                <option value="business_admin"> Business Administration and Management </option>
+                <option value="public_health"> Public Health </option>
+                <option value="agriculture"> Agricultre </option>
+                <option value="political_science"> Political Science and International Relations </option>
+                <option value="development_studies"> Development Studies </option>
+                <option value="social_work"> Social Work </option>
+                <option value="clinical_science"> Clinical Science </option>
+                <option value="economics"> Economics </option>
+                <!-- <option value="mba_finance"> MBA. Finance </option>
+                <option value="master_entrepreneurship"> Masters in Entrepreneurship </option> -->
+            </select>
+        </div>
+
+        <div>
+            <label for="program">Program:</label>
+            <select id="program" required>
+                <option value="--">--</option>
+                <option value="undergraduate"> Diploma </option>
+                <option value="undergraduate"> Under-graduate </option>
+                <option value="postgraduate"> Post-graduate </option>
+            </select>
+        </div>
+
+        <div>
+            <label for="year">Year:</label>
+            <select id="year" required>
+                <option value="--">--</option>
+                <option value="first_year">1st</option>
+                <option value="second_year">2nd</option>
+                <option value="third_year">3rd</option>
+                <option value="fourth_year">4th</option>
+            </select>
+        </div>
+        <div>
+            <label for="semester">Semester:</label>
+            <select id="semester" required>
+                <option value="--">--</option>
+                <option value="first_sem">1st</option>
+                <option value="second_sem">2nd</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="fees">Fees:</label>
+            <select id="fees" required>
+                <option value="--">--</option>
+                <option value="paid_full">Paid Full</option>
+                <option value="half">Half Paid</option>
+                <option value="none">Not Paid</option>
+            </select>
+        </div>
+
+
+
+        <h3>Parent / Guardian Information</h3>
+        <div>
+            <label for="parentFirstName">First Name:</label>
+            <input type="text" id="parentFirstName" required>
+        </div>
+        <div>
+            <label for="parentLastName">Last Name:</label>
+            <input type="text" id="parentLastName" required>
+        </div>
+        <div>
+            <label for="parentPhone">Phone:</label>
+            <input type="tel" id="parentPhone" required>
+        </div>
+        <div>
+            <label for="parentEmail">Email:</label>
+            <input type="email" id="parentEmail" required>
+        </div>
+
+        <div>
+            <button type="submit"> Register </button>
+        </div>
+
+        <div class="alert">Registered</div>
+    </form>
+
+<!-- </div> -->
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <img src="imgs/ebk.png" alt="Ernest Bai Koroma University of Science and Technology" style="max-height: 50px;">
+        </div>
+        <p>EBKUST - Knowledge For Innovation </p>
+        <p>&copy; 2024 EBKUST. All rights reserved.</p>
+        <p>
+            <a href="https://www.facebook.com/ebkustsl/">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="https://www.linkedin.com/company/ernest-bai-koroma-university-of-science-and-technology/?originalSubdomain=sl">LinkedIn</a>
+        </p>
+        <p style="
+        font-size: 11.5px;
+        color: aliceblue;
+        margin: 12px;"><a href="https://github.com/dominicOT">Developer.</a></p>
+    </footer>
+
+
+
+
+    
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    
+    <script src="script/scripts.js"></script>
+
+
+</body>
+</html>
